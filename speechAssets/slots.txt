@@ -13,7 +13,6 @@ Ethereum
 Lykke
 Ripple
 Litecoin
-Ethereum Classic
 NEM
 Dash
 IOTA
@@ -32,6 +31,5 @@ Bytecoin
 Iconomi
 Augur
 Dogecoin
-Stellar Lumens
 Lisk
 Byteball
