@@ -121,9 +121,6 @@ var handlers = {
           var currency = this.event.request.intent.slots.currency.value;
           var cryptoCurrency = this.event.request.intent.slots.cryptoCurrency.value;
           var currencyShort = '';
-          console.log('Wert von amount: ', amount);
-          console.log('Wert von currency: ', currency);
-          console.log('Wert von cryptoCurrency: ', cryptoCurrency);
 
           if (currency == 'euro') {
               currencyShort = 'EUR';
@@ -134,7 +131,6 @@ var handlers = {
           } else {
               currencyShort = 'EUR';
           }
-          console.log('Wert von currencyShort: ', currencyShort);
 
           var myRequest = {crCu:cryptoCurrency,cuSh:currencyShort};
           httpGet(myRequest,  (myResult) => {
@@ -195,23 +191,13 @@ var handlers = {
 };
 
 var http = require('http');
-// https is a default part of Node.JS.  Read the developer doc:  https://nodejs.org/api/https.html
-// try other APIs such as the current bitcoin price : https://btc-e.com/api/2/btc_usd/ticker  returns ticker.last
 
 function httpGet(myData, callback) {
-  console.log("got to the http function");
-    // GET is a web service request that is fully defined by a URL string
-    // Try GET in your browser:
-    // http://numbersapi.com/42
-
-    // Update these options with the details of the web service you would like to call
     var options = {
         host: 'api.coinmarketcap.com',
         path: '/v1/ticker/' + encodeURIComponent(myData.crCu) + '/?convert=' + encodeURIComponent(myData.cuSh),
         method: 'GET',
     };
-
-    console.log('Inhalt von curSh: ', myData.curSH);
 
     var req = http.request(options, res => {
         res.setEncoding('utf8');
@@ -222,15 +208,8 @@ function httpGet(myData, callback) {
         });
 
         res.on('end', () => {
-            // we have now received the raw return data in the returnData variable.
-            // We can see it in the log output via:
-            // console.log(JSON.stringify(returnData))
-            // we may need to parse through it to extract the needed data
-            //console.log('Zurückgegebene Daten: ', returnData, typeof(returnData));
             var returnDataJSON = JSON.parse(returnData);
-            //console.log('Zurückgegebener Datenstring als Objekt: ', returnDataJSON);
-            //console.log('Zurückgegebener Datenstring als Objekt, zugriff auf Key name: ', returnDataJSON[0].price_eur);
-            callback(returnDataJSON);  // this will execute whatever function the caller defined, with one argument
+            callback(returnDataJSON);
         });
 
     });
