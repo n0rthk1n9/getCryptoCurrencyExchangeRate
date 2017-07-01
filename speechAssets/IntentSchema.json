@@ -1,0 +1,52 @@
+{
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "cryptoCurrency",
+          "type": "LIST_OF_CRYPTO_CURRENCYS"
+        }
+      ],
+      "intent": "GetCryptoCurrencyExchangeRateIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "cryptoCurrency",
+          "type": "LIST_OF_CRYPTO_CURRENCYS"
+        },
+        {
+          "name": "currency",
+          "type": "LIST_OF_CURRENCYS"
+        }
+      ],
+      "intent": "GetCryptoCurrencyExchangeRateInCurrencyIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "cryptoCurrency",
+          "type": "LIST_OF_CRYPTO_CURRENCYS"
+        },
+        {
+          "name": "currency",
+          "type": "LIST_OF_CURRENCYS"
+        },
+        {
+          "name": "amount",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "GetAmountOfCryptoCurrencyInCurrencyIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}

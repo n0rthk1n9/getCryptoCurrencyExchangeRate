@@ -1,0 +1,37 @@
+LIST_OF_CURRENCYS
+
+Euro
+Dollar
+US-Dollar
+Pfund
+Pfund Sterling
+
+LIST_OF_CRYPTO_CURRENCYS
+
+Bitcoin
+Ethereum
+Lykke
+Ripple
+Litecoin
+Ethereum Classic
+NEM
+Dash
+IOTA
+BitShares
+Monero
+Stratis
+Zcash
+AntShares
+Golem
+Steem
+Siacoin
+Waves
+BitConnect
+Gnosis
+Bytecoin
+Iconomi
+Augur
+Dogecoin
+Stellar Lumens
+Lisk
+Byteball

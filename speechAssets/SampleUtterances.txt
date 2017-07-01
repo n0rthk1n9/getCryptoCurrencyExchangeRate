@@ -1,0 +1,19 @@
+GetCryptoCurrencyExchangeRateIntent sag mir den {cryptoCurrency} Kurs
+GetCryptoCurrencyExchangeRateIntent dass er mir den {cryptoCurrency} Kurs sagen soll
+GetCryptoCurrencyExchangeRateIntent zeig mir den {cryptoCurrency} Kurs
+GetCryptoCurrencyExchangeRateIntent gib mir den {cryptoCurrency} Kurs
+GetCryptoCurrencyExchangeRateInCurrencyIntent dass er mir den {cryptoCurrency} Kurs in {currency} sagen soll
+GetCryptoCurrencyExchangeRateInCurrencyIntent sag mir den {cryptoCurrency} Kurs in {currency}
+GetCryptoCurrencyExchangeRateInCurrencyIntent zeig mir den {cryptoCurrency} Kurs in {currency}
+GetCryptoCurrencyExchangeRateInCurrencyIntent gib mir den {cryptoCurrency} Kurs in {currency}
+GetCryptoCurrencyExchangeRateInCurrencyIntent wie der Kurs von {cryptoCurrency} in {currency} ist
+GetCryptoCurrencyExchangeRateInCurrencyIntent wie der {cryptoCurrency} Kurs in {currency} ist
+GetAmountOfCryptoCurrencyInCurrencyIntent wie viel {currency} sind {amount} {cryptoCurrency}
+GetAmountOfCryptoCurrencyInCurrencyIntent sag mir wie viel {amount} {cryptoCurrency} in {currency} sind
+GetAmountOfCryptoCurrencyInCurrencyIntent wie viel {amount} {cryptoCurrency} in {currency} sind
+GetAmountOfCryptoCurrencyInCurrencyIntent wie viel {currency} {amount} {cryptoCurrency} sind
+GetAmountOfCryptoCurrencyInCurrencyIntent wie viel sind {amount} {cryptoCurrency} in {currency}
+GetAmountOfCryptoCurrencyInCurrencyIntent wie viel sind {amount} {cryptoCurrency} in {currency} wert
+GetAmountOfCryptoCurrencyInCurrencyIntent wie viel {currency} {amount} {cryptoCurrency} wert sind
+GetAmountOfCryptoCurrencyInCurrencyIntent wie viel {amount} {cryptoCurrency} in {currency} wert sind
+GetAmountOfCryptoCurrencyInCurrencyIntent wie viel {currency} sind {amount} {cryptoCurrency} wert
