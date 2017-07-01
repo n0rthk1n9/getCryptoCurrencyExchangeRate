@@ -2,9 +2,7 @@ LIST_OF_CURRENCYS
 
 Euro
 Dollar
-US-Dollar
 Pfund
-Pfund Sterling
 
 LIST_OF_CRYPTO_CURRENCYS
 
