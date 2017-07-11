@@ -25,19 +25,22 @@
     {
       "slots": [
         {
+          "name": "amount",
+          "type": "AMAZON.NUMBER"
+        },
+        {
           "name": "cryptoCurrency",
           "type": "LIST_OF_CRYPTO_CURRENCYS"
         },
         {
           "name": "currency",
           "type": "LIST_OF_CURRENCYS"
-        },
-        {
-          "name": "amount",
-          "type": "AMAZON.NUMBER"
         }
       ],
       "intent": "GetAmountOfCryptoCurrencyInCurrencyIntent"
+    },
+    {
+      "intent": "Unhandled"
     },
     {
       "intent": "AMAZON.HelpIntent"

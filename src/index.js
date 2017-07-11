@@ -1,7 +1,8 @@
 'use strict';
 var Alexa = require('alexa-sdk');
+var http = require('http');
 
-var APP_ID = undefined;
+var APP_ID = 'amzn1.ask.skill.XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'; // replace with your own Skill-ID
 
 var SKILL_NAME = "Krypto Kurs";
 var GET_FACT_MESSAGE = "Hier ist dein zufälliger Kurs: ";
@@ -38,7 +39,10 @@ var data = [
 
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
-    alexa.APP_ID = APP_ID;
+    // sample code form github provided by Amazon is wrong at this point!
+    // alexa.appId is the right variable to put your local specified APP_ID in
+    // alexa.APP_ID is WRONG!!
+    alexa.appId = APP_ID;
     alexa.registerHandlers(handlers);
     alexa.execute();
 };
@@ -178,6 +182,10 @@ var handlers = {
               });
           }
     },
+    'Unhandled': function () {
+        var speechOutput = HELP_MESSAGE;
+        this.emit(':tell', speechOutput);
+    },
     'AMAZON.HelpIntent': function () {
         var speechOutput = HELP_MESSAGE;
         this.emit(':tell', speechOutput);
@@ -189,8 +197,6 @@ var handlers = {
         this.emit(':tell', STOP_MESSAGE);
     }
 };
-
-var http = require('http');
 
 function httpGet(myData, callback) {
     var options = {
